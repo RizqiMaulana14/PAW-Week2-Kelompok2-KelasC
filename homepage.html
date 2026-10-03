@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Homepage - Library Integrated Management</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <header class="site-header">
+    <div class="header-container">
+      <div class="logo">
+        <h1>LIM System</h1>
+      </div>
+      <nav class="site-nav" aria-label="Navigasi Utama">
+        <a href="homepage.html" class="active">Beranda (Homepage)</a>
+        <a href="index.html">Landing Page</a>
+        <a href="#fitur">Fitur Utama</a>
+        <a href="#pinjam">Peminjaman</a>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero-section" aria-labelledby="hero-title">
+      <article class="hero-text">
+        <h2 id="hero-title">Solusi Pintar Manajemen Perpustakaan Digital</h2>
+        <p>Library Integrated Management (LIM) menggabungkan peminjaman buku berbasis web dengan asisten AI Chatbot untuk memudahkan pencarian, rekomendasi, dan manajemen ketersediaan secara real-time.</p>
+        <a href="#pinjam" class="btn-cta">Coba Peminjaman</a>
+      </article>
+
+      <aside class="hero-card" aria-label="Status Sistem">
+        <h3>Status Sistem LIM</h3>
+        <p class="status-badge">🟢 Sistem Online</p>
+        <ul>
+          <li><strong>Chatbot AI:</strong> Siap Membantu</li>
+          <li><strong>Katalog:</strong> Real-time Sync</li>
+          <li><strong>Akses:</strong> Berbasis Web</li>
+        </ul>
+      </aside>
+    </section>
+
+    <section id="fitur" class="features-section" aria-labelledby="fitur-title">
+      <header class="section-header">
+        <h2 id="fitur-title" class="section-title">Detail Sistem & Fitur Unggulan</h2>
+        <p class="section-subtitle">Melihat keunggulan dan analisis efisiensi dari platform Library Integrated Management</p>
+      </header>
+
+      <div class="features-grid">
+        <article class="feature-card">
+          <h3>Sistem Terintegrasi</h3>
+          <p>Mengintegrasikan beberapa fungsi dalam satu sistem yang terpadu untuk efisiensi pengelolaan.</p>
+        </article>
+
+        <article class="feature-card">
+          <h3>Real-Time Info</h3>
+          <p>Informasi ketersediaan buku secara langsung dan terkini tanpa penundaan data.</p>
+        </article>
+
+        <article class="feature-card">
+          <h3>Anti Bentrokan</h3>
+          <p>Mencegah terjadinya bentrokan peminjaman secara otomatis melalui validasi jadwal cerdas.</p>
+        </article>
+
+        <article class="feature-card">
+          <h3>AI Chatbot</h3>
+          <p>Memanfaatkan kecerdasan buatan untuk merespons pertanyaan dan merekomendasikan buku secara personal.</p>
+        </article>
+
+        <article class="feature-card">
+          <h3>Berbasis Web</h3>
+          <p>Dapat diakses dari mana saja dan kapan saja tanpa perlu menginstal aplikasi tambahan.</p>
+        </article>
+
+        <article class="feature-card">
+          <h3>Solusi Nyata</h3>
+          <p>Menjawab permasalahan nyata seperti antrean panjang dan efisiensi staf di perpustakaan kampus.</p>
+        </article>
+      </div>
+
+      <div class="evaluation-grid">
+        <section class="evaluation-card pros" aria-labelledby="pros-title">
+          <h3 id="pros-title">Kelebihan Utama</h3>
+          <ul>
+            <li>Mengintegrasikan beberapa fungsi dalam satu sistem</li>
+            <li>Memiliki fitur informasi ketersediaan secara real-time</li>
+            <li>Mencegah terjadinya bentrokan peminjaman</li>
+            <li>Memanfaatkan AI chatbot untuk membantu pengguna</li>
+            <li>Teknologi yang digunakan cukup jelas</li>
+            <li>Memberikan solusi terhadap permasalahan nyata di perpustakaan</li>
+          </ul>
+        </section>
+
+        <section class="evaluation-card cons" aria-labelledby="cons-title">
+          <h3 id="cons-title">Kekurangan & Catatan Pengembangan</h3>
+          <ul>
+            <li>Pengujian sistem masih kurang mendalam</li>
+            <li>Akurasi chatbot AI belum diukur secara kuantitatif</li>
+            <li>Belum ada evaluasi pengguna yang terukur</li>
+            <li>Fitur rekomendasi buku belum dijelaskan secara mendalam</li>
+            <li>Kinerja AI lokal memiliki keterbatasan</li>
+            <li>Belum ada perbandingan kinerja dengan model AI lain</li>
+            <li>Evaluasi efisiensi belum menggunakan perbandingan kuantitatif</li>
+          </ul>
+        </section>
+      </div>
+    </section>
+
+    <section id="pinjam" class="form-section" aria-labelledby="form-title">
+      <h2 id="form-title">Form Layanan Peminjaman Buku</h2>
+      <form action="#" method="post" class="borrow-form">
+        <div class="form-group">
+          <label for="nama">Nama Lengkap</label>
+          <input type="text" id="nama" name="nama" placeholder="Masukkan nama Anda..." required>
+        </div>
+
+        <div class="form-group">
+          <label for="nim">NIM / ID Anggota</label>
+          <input type="text" id="nim" name="nim" placeholder="Masukkan NIM Anda..." required>
+        </div>
+
+        <div class="form-group">
+            <label for="kategori">Kategori Buku</label>
+            <select select id="kategori" name="kategori" required>
+            <option value="">-- Pilih Kategori --</option>
+            <option value="teknologi">Teknologi & Komputer</option>
+            <option value="sains">Sains & Matematika</option>
+            <option value="sastra">Sastra & Novel</option>
+            <option value="sejarah">Sejarah & Budaya</option>
+            </select>
+        </div>
+
+        <div class="form-group">
+          <label for="judul_buku">Judul Buku yang Ingin Dipinjam</label>
+          <input type="text" id="judul_buku" name="judul_buku" placeholder="Judul buku..." required>
+        </div>
+
+        <div class="form-group">
+          <label for="catatan">Catatan / Pertanyaan untuk AI Chatbot</label>
+          <textarea id="catatan" name="catatan" rows="4" placeholder="Tuliskan pesan atau preferensi topik buku yang ingin direkomendasikan..."></textarea>
+        </div>
+
+        <button type="submit" class="btn-submit">Ajukan Peminjaman</button>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2026 TI-501 Pengembangan Aplikasi Web — Teknologi Informasi UMY</p>
+    <p>&copy; Kelompok 2</p>
+  </footer>
+
+</body>
+</html>
